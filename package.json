@@ -1,0 +1,30 @@
+{
+  "name": "gdscnuvbot",
+  "version": "1.0.0",
+  "description": "The official Discord bot for GDSC NUV!",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon src/bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DSCNUV/gdscnuvbot.git"
+  },
+  "keywords": [],
+  "author": "dscnuv",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/DSCNUV/gdscnuvbot/issues"
+  },
+  "homepage": "https://github.com/DSCNUV/gdscnuvbot#readme",
+  "dependencies": {
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
