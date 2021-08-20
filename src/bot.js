@@ -12,18 +12,16 @@ const PREFIX = '$';
 let mems = ['Nimit#4979', 'krish#1234'];
 
 client.on('messageCreate', (message) => {
-    let command = message.content.split(' ');
-    console.log(command);
     if(message.content.startsWith(PREFIX)) {
         switch(message.content.split(' ')[1]){
-        
             case 'hello': message.channel.send('Lets start with the first clue! \nGo to this link: https://linktr.ee/welcome2gdscnuv');
                 break;
             case 'GDSCNUVGG': {
                 message.channel.send("GG! That would've been fun to explore let's move on to the next clue. ");
                 message.channel.send({
-                    files: ['https://cdn.discordapp.com/attachments/873390286708043786/878228570554654720/Screenshot_1629394415.png']
+                    files: [`${process.env.link}`]
                 })
+                break;
             }
             case 'https://gdsc.community.dev/navrachana-university-vadodara/': {
                 message.channel.send(`Congrats ${message.author} on completing the treasure hunt!`);
